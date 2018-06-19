@@ -31,6 +31,6 @@
     "cordova-wp8"
   ],
   "license": "MIT",
-  "name": "cordova-plugin-canvas2image",
+  "name": "Canvas2ImagePlugin",
   "version": "0.6.0"
 }
