@@ -6,7 +6,7 @@
   },
   "bundleDependencies": false,
   "cordova": {
-    "id": "org.devgeeks.Canvas2ImagePlugin",
+    "id": "Canvas2ImagePlugin",
     "platforms": [
       "ios",
       "android",
