@@ -67,4 +67,24 @@
 
         <source-file src="src/wp8/Canvas2ImagePlugin.cs" />
     </platform>
+    
+    <!-- windows -->
+    <platform name="windows">
+        <config-file target="package.appxmanifest" parent="/Package/Capabilities" versions="<10.0.0">
+            <Capability Name="picturesLibrary" />
+        </config-file>
+        <config-file target="package.appxmanifest" parent="/Package/Capabilities" versions=">=10.0.0">
+            <uap:Capability Name="picturesLibrary" />
+        </config-file>
+
+        <config-file target="config.xml" parent="/*">
+            <feature name="Canvas2ImagePlugin">
+                <param name="windows-package" value="Canvas2ImagePlugin" />
+            </feature>
+        </config-file>
+
+        <js-module src="src/windows/Canvas2ImageProxy.js" name="Canvas2ImageProxy">
+            <merges target="" />
+        </js-module>
+    </platform>
 </plugin>
